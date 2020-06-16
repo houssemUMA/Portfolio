@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*General style */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: ghostwhite;
+}
+
+.section-title {
+  color: rgb(13, 52, 160);
+  text-align: center;
+  margin: 10px;
+}
+.section-container {
+  background-color: #fff;
+  box-shadow: 1px 2px 7px 1px #0000004d;
+  padding: 20px;
+  margin: 25px;
+}
+
+/*Header*/
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: ghostwhite;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links > li {
+  padding: 10px;
+}
+
+.nav-links > li > a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-links > li > a:hover {
+  border-bottom: 1px solid black;
+}
+
+/* responsive nav-menu  */
+
+.navmenu-responsive {
+  display: none;
+  top: 80px;
+  right: 0;
+  background-color: rgb(248, 248, 255);
+  width: 100%;
+}
+
+/* checkbox */
+#nav-btn {
+  display: none;
+}
+
+/*burger menu */
+
+.burger-menu {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  border-radius: 2px;
+  display: none;
+  padding: 8px;
+  width: 20px;
+}
+.burger-menu span {
+  border: 1px solid rgb(25, 66, 201);
+  width: 100%;
+  margin: 2px 0;
+}
+
+@media (max-width: 600px) {
+  .navmenu {
+    display: none;
+  }
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nav-btn:checked + .navmenu-responsive {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+  }
+}
+
+/*About Section*/
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about-info {
+  margin: 10px;
+  flex-basis: 60%;
+}
+
+.about-info p {
+  text-align: justify;
+  display: inline;
+}
+.about-info button {
+  cursor: pointer;
+  display: block;
+  background: none;
+  padding: 8px 15px;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.about-info button:hover {
+  background-color: black;
+  color: rgb(253, 253, 253);
+}
+
+/* Work */
+
+.work-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.work-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 10px;
+}
+.work-card img {
+  width: 100%;
+}
+
+.work-card p {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.616);
+}
+
+/* Contact*/
+
+#contact-section form {
+  margin: auto;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  padding: 30px;
+  background-color: ghostwhite;
+  border: 1px solid rgba(0, 0, 0, 0.397);
+}
+#contact-section form input {
+  padding: 10px;
+}
+
+#contact-section form button {
+  cursor: pointer;
+  display: block;
+  background: none;
+  padding: 8px 15px;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#contact-section form button:hover {
+  background-color: black;
+  color: rgb(253, 253, 253);
+}
+
+/*footer*/
+footer {
+  padding: 2rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
